@@ -6,7 +6,7 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 10:04:59 by exam              #+#    #+#             */
-/*   Updated: 2019/04/16 11:27:47 by exam             ###   ########.fr       */
+/*   Updated: 2019/04/30 09:00:44 by mybenzar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,6 @@ char	*ft_itoa_base(int value, int base)
 	while (i >= k)
 	{
 		nb_str[i] = radix[u_value % base];
-		printf("coucou\n");
 		u_value = u_value / base;
 		i--;
 	}
@@ -93,6 +92,6 @@ char	*ft_itoa_base(int value, int base)
 
 int main(void)
 {
-	printf("%s\n", ft_itoa_base(0, 2));
+	printf("%s\n", ft_itoa_base(21, 10));
 	return (1);
 }
